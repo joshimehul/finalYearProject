@@ -8417,9 +8417,9 @@
     "restore": {
       "projectUniqueName": "CollegeProject",
       "projectName": "CollegeProject",
-      "projectPath": "C:\\Users\\hp\\Documents\\UiPath\\CollegeProject\\.local",
+      "projectPath": "D:\\finalYearProject\\CollegeProject\\.local",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\Documents\\UiPath\\CollegeProject\\.local"
+      "outputPath": "D:\\finalYearProject\\CollegeProject\\.local"
     },
     "frameworks": {
       "net461": {
