@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="877,7189" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="877,7407" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -90,19 +90,19 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="552,7124" sap2010:WorkflowViewState.IdRef="Sequence_4">
+  <Sequence sap:VirtualizedContainerService.HintSize="552,7342" sap2010:WorkflowViewState.IdRef="Sequence_4">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="510,7032" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="30b4c138-b542-4d48-b5bd-b6457a3c20db" Version="V1">
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="510,7250" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="30b4c138-b542-4d48-b5bd-b6457a3c20db" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,6816" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,7034" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="webs" />
               <Variable x:TypeArguments="x:Int32" Name="CurrentRow" />
@@ -113,13 +113,13 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:ReadCsvFile DataTable="[webs]" Delimitator="Comma" DisplayName="Read CSV" FilePath="first.csv" sap:VirtualizedContainerService.HintSize="434,152" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[webs]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,6530" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[webs]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,6748" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,6414" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,6632" sap2010:WorkflowViewState.IdRef="Sequence_12">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:Int32" Name="rowIndex" />
                       <Variable x:TypeArguments="ui:GenericValue" Name="value" />
@@ -162,7 +162,7 @@
                         </InArgument>
                       </uix:NTypeInto.Text>
                     </uix:NTypeInto>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="30b4c138-b542-4d48-b5bd-b6457a3c20db" Version="V1">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_3" IsPassword="True" ScopeIdentifier="30b4c138-b542-4d48-b5bd-b6457a3c20db" Version="V1">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.scoop.it/login" DesignTimeRectangle="528, 474, 400, 34" ElementType="InputBoxPassword" FriendlyName="'automation'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='' aaname='' /&gt;" Guid="ad239f79-87f4-4663-88bc-10b6212577df" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZQAAAAmCAYAAADjsG1qAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFpSURBVHhe7dcxagJREIDhvV8ayWmCbe7gCTxCOutcIIVNsAhiEEGJWGmRF0dFJPuMhp3yK75iZ33L2szPNrvdrgBAV4ICQIpzUFbrTZlMF+X9Yw4AN0Uzoh2toMSN2XJb5l/fAHBTNCPa0QpK1KZ2AACuiXYICgCdCQoAKQQFgBSCAkAKQQEghaAAkEJQAEghKACkEBQAUggKACkEBYAUggJACkEBIEX3oIyH5aFpSrP3NPpjNno+XDfNYxmMr89e+sdzTW9Y3uI3d88+y6B3mvVfj8+vzWrvBkBnnYNyXuzhtNzbs4vFHg7LvTK7WPbhsPDvnZ3jFE6Bqsxq71v7XwD8jy+U0/MA6KZ7UABgT1AASCEoAKQQFABSCAoAKQQFgBSCAkAKQQEghaAAkEJQAEghKACkEBQAUggKACmqQZlMF2W23FYPAMBv0YxoRysoq/XmcCNqAwC3RDOiHa2gAEAXggJAgl35AbQx+KOWyui2AAAAAElFTkSuQmCC" InformativeScreenshot="82a6a9722dfb9e41746ffb75fdbdbe77.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Connection | Scoop.it' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -213,6 +213,7 @@
                         <uix:TargetAnchorable BrowserURL="https://www.scoop.it/topic/mehul-joshi" DesignTimeRectangle="617, 385, 46, 34" ElementType="Text" FriendlyName="'&gt;&gt;'" FullSelectorArgument="&lt;webctrl parentid='scoopsTable' tag='TABLE' /&gt;&lt;webctrl id='urlChooserButton' tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='scoopsTable' tag='TABLE' /&gt;&lt;webctrl id='urlChooserButton' type='' tag='DIV' class='button button-green new-scoop-button  ' aaname='                      &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;gt;&amp;gt;' check:innerText='&amp;gt;&amp;gt;' /&gt;" Guid="f235add1-582f-47cb-a757-238c9d70c46b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADIAAAAmCAYAAACGeMg8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFzSURBVFhH7ZnBSsNAEIZ9HMF38NSjUvoGfQuF3rzl5s0n8NZTvSUnoaEVWlBCioYQxTZIkJQ2BEka29+sJmlIghKy4CbswHfZGZb52Nm97MHJaRtNoHkix2fnOBoMcChJtYD0SnrOidRJIob0nBMpKqwDXIQ1uAhrcBHW4CKswUVYg4vkkIdoFa0nhHm5aJ0O9ERMF/j0MbMM9O4K8pKG0QZwXBt9bfqHdHnoieg2nB2SyDes4MbdRtkwfpUuDz2Rb8boPVuYeamGNy5G88dEqDXR0F+6e+ndFu9rC5f32b3KQVlkT/fJwjz2CWwI2Rr5AderICoAdDOTLwldEXkKYWFDD+9CHJ7nQDSU5EQ6qgFx7cNLTiSAvjRxUXHE6Im8rFLNkXF5gzAZpmoUiB9RnkQ4crevKjrpPSpAT4S8WuQ+LDR0C5/Z8NXyf+7DlTouyFeDnsg/w0VYg4uwBhdhDS7CGs0Vacy3QmM+eupOQ0Ta+AL/6sBFUQNDgAAAAABJRU5ErkJggg==" InformativeScreenshot="7d210fd034d6297e47f3587cbb45699b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='mehul joshi | Scoop.it' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
                       </uix:NClick.Target>
                     </uix:NClick>
+                    <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="334,178" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_8" ScopeIdentifier="30b4c138-b542-4d48-b5bd-b6457a3c20db" Shortcuts="[d(hk)][k(down)][u(hk)][d(hk)][k(down)][u(hk)][d(hk)][k(down)][u(hk)]" Version="V1" />
                     <Delay Duration="00:00:15" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
                     <uix:NClick ClickType="Single" DisplayName="Click 'Publish'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="30b4c138-b542-4d48-b5bd-b6457a3c20db" Version="V1">
                       <uix:NClick.Target>
@@ -256,11 +257,6 @@
                           </uix:TargetAnchorable.Anchors>
                         </uix:TargetAnchorable>
                       </uix:NTypeInto.Target>
-                      <uix:NTypeInto.Text>
-                        <InArgument x:TypeArguments="x:String">
-                          <Literal x:TypeArguments="x:String" Value="" />
-                        </InArgument>
-                      </uix:NTypeInto.Text>
                     </uix:NTypeInto>
                     <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_8" IsPassword="True" ScopeIdentifier="30b4c138-b542-4d48-b5bd-b6457a3c20db" Version="V1">
                       <uix:NTypeInto.Target>
